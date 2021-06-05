@@ -91,7 +91,7 @@ export function getProductsToShop(skip, limit,filters =[], previousState = []){
 export function addProduct(datatoSubmit){
 
     const request = axios.post(`${PRODUCT_SERVER}/article`,datatoSubmit)
-                    .then(response => response.data);
+    .then(response => response.data);
 
     return {
         type: ADD_PRODUCT,
